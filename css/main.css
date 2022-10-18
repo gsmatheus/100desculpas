@@ -24,7 +24,7 @@ section{
 }
 
 header{
-  height: calc(100vh + 0px);
+  height: calc(100vh + 60px);
   width: auto;
   background-image: url("../img/header-left.jpg");
   background-position: center;
@@ -352,6 +352,9 @@ h6 {
   #model-app{
     display: none;
   }
+    #mobile-sobre {
+      display: none;
+    }
   
   /* responsivo mobile */
   @media (max-width: 800px) {
@@ -373,9 +376,16 @@ h6 {
     #model-desktop{
       display: none;
     }
+        header {
+          height: 240vh;
+        }
+    
+        #sobre-desktop {
+          display: none;
+        }
     #model-app{
       display: block;
-      height: calc(100vh + 80px);
+      height: calc(240vh + 80px);
       width: 100%;
       text-align: center;
       background: var(--color-background);

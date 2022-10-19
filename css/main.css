@@ -600,7 +600,32 @@ h6 {
     .right h3 {
       font-size: 1.4rem;
     }
+
+    /* page denuncie-page */
+    #denuncie-page .denuncie-card p{
+      color: var(--color-turquesa);
+    }
+    #denuncie-page .denuncie-card p a{
+      color: var(--color-red);
+    }
+    #denuncie-page h2{
+      color: var(--color-red);
+      font-size: 1.6rem;
+    }
+
+    /* page legislacao-page */
+    #medidas-page h1{
+      font-size: 1.6rem;
+    }
+
+    /* page legislacao-page */
+    #legislacao-page h2{
+      font-size: 1.4rem;
+    }
+
+
   }
+  /* fim responsivo 850px */
 
 
   /* estatisticas */

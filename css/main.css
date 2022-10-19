@@ -348,13 +348,29 @@ h6 {
     background: #1a5133;
   }
 
-/* tiar tela do app */
+/* tirar tela do app */
   #model-app{
     display: none;
   }
+                                                                                                                                                                                                                                                                                                                                                    /* sobre no mobile */
     #mobile-sobre {
-      display: none;
-    }
+      display: block;
+      }
+      
+      #mobile-sobre .sobre-texto {
+        color: var(--color-turquesa);
+      }
+      
+      #mobile-sobre .sobre-texto h1 {
+        color: var(--color-red);
+      }
+      
+      #mobile-sobre .btn-denuncie {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 50px;
+        content: '▼';
+      }
   
   /* responsivo mobile */
   @media (max-width: 800px) {
@@ -379,8 +395,7 @@ h6 {
         header {
           height: 240vh;
         }
-    
-        #sobre-desktop {
+    #sobre #sobre-desktop {
           display: none;
         }
     #model-app{
@@ -399,7 +414,7 @@ h6 {
     #model-app .woman img{
       width: 100%;
       margin-bottom: 50px;
-      margin-top: 100px;
+      margin-top: 50px;
     }
 
     #model-app .button-ajuda{

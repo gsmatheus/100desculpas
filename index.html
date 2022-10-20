@@ -11,6 +11,7 @@
   <link rel="manifest" href="img/favicon/site.webmanifest">
   
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main-mobile.css">
   <!-- boxicons -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -32,7 +33,7 @@
           <ul id="menu" role="menu">
             <div class="menu-mobile">
 
-              <div class="btn-denuncie">Denuncie</div>
+              <div class="btn-denuncie"><a href="https://www.webdenuncia.org.br/cidadao/denuncie" target="_blank">Denuncie</a></div>
               <div class="icons">
                 <div class="delegacia">
                  <a href="https://www.delegaciaeletronica.policiacivil.sp.gov.br/ssp-de-cidadao/home" target="_blank">
@@ -79,7 +80,7 @@
               <li><a href="#colaborador">Colaboradores</a></li>
               <li><a href="#contato">Contato</a></li>
               <li>
-              <div class="btn-denuncie">Denuncie</div>
+              <a  class="btn-denuncie" href="https://www.webdenuncia.org.br/cidadao/denuncie" target="_blank">Denuncie</a>
               </li>
            </div>
           </ul>
@@ -95,11 +96,39 @@
            </div>
             <p>Faça sua denuncia anônima</p>
             <div class="button-ajuda">
-              <div class="btn-denuncie">Ajuda</div>
+              <div class="btn-denuncie abrirModal2">Ajuda</div>
               <p>Canais de ajuda</p>
-              <div class="btn-denuncie">Telefones Úteis</div>
+              <div class="btn-denuncie abrirModal">Telefones Úteis</div>
               <p>Telefones para contato</p>
             </div>
+                    <!-- modal  -->
+                <div id="modal-ajuda-2" class="modal-container">
+                  <div class="modal">
+                    <button class="fechar">X</button>
+                    <h3>Canais de Ajuda</h3>
+                    <p>Click para acessar</p>
+                    <ul>
+                      <li><a href="https://www.justica.sp.gov.br/" target="_blank">Secretaria da Justiça e Cidadania</a></li>
+                      <li><a href="https://www.sosmulher.sp.gov.br/#contato" target="_blank">Fale Conosco (SOS MULHER)</a></li>
+                      <li><a href="https://www.bancodopovo.sp.gov.br/" target="_blank">Banco do Povo Paulista</a></li>
+                      <li><a href="https://www.sosmulher.sp.gov.br/apoio/apoioMulher.html" target="_blank">Serviço Público à Mulher</a></li>
+                      <li><a href="https://play.google.com/store/apps/details?id=pmesp.appemer.mp.android.medidasprotetivas" target="_blank">Baixe o App SOS MULHER</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- modal  -->
+                <div id="modal-ajuda" class="modal-container">
+                  <div class="modal">
+                    <button class="fechar">X</button>
+                    <h3>Telefones Úteis</h3>
+                    <ul>
+                      <li><strong>190</strong> - Polícia Militar</li>
+                      <li><strong>193</strong> - Bombeiros</li>
+                      <li><strong>181</strong> - Disque Denúncia</li>
+                      <li><strong>180</strong> - Centra de Atendimento à Mulher</li>
+                    </ul>
+                  </div>
+                </div>
           
           </div>
           <!-- sobre so aparece no mobile  -->
@@ -376,6 +405,9 @@
                 </section>
               </div>
         </div>
+        
+
+  
       </div>
 <!-- fim dos item para mobile -->
 
@@ -403,303 +435,305 @@
         </div>
       </div>
     </header>
+    <!-- conteudo que some no @media Mobile -->
     <div class="conteudo-off">
           <!-- sobre -->
-    <section id="sobre" class="py-bottom">
-      <h1 class="title"> Sobre</h1>
-      <div class="container">
-        <div id="sobre-desktop" class="sobre">
-          <div class="sobre-texto">
-            <div>
-              <h1>100 Desculpas para denunciar</h1>
-              <h3>Chega de DESCULPAS! Você não está mais sozinha!</h3>
-            </div>
-            <div>
-              <p>Assim como não existem desculpas para a violência contra a mulher, não há mais desculpas para não pedir ajuda, denunciar qualquer tipo de agressão ou abuso que você esteja sofrendo. </p>
-            <p>Desculpas como dificuldades de deslocamento, medo, falta tempo, vergonha agora não tem vez. </p>
-            <p>O portal 100 desculpas disponibiliza na palma da sua mão as ferramentas necessárias para denunciar, pedir ajuda e enfrentar qualquer tipo de agressão que você venha sofrendo.</p>
-            <p><strong>Deixe o 100 Desculpas te ajudar!</strong></p>
-            </div>
-          </div>
-          <div class="sobre-logo">
-            <img src="img/logos/logo-b.png" alt="Logo Branca">
-          </div>
-        </div>
-        <div class="sobre-projeto">
-          <p>A violência doméstica, apesar de toda a companha e luta a respeito, ainda faz parte do cotidiano de grande parte das famílias brasileiras, e tem suas origens no lar, aproveitando-se das relações de afeto, independente de idade, raça/etnia e classe social. </p>
-          <p>Diante de tal quadro, o enfretamento à violência contra a mulher não pode se restringir às condições clínicas ou apenas na criminalização do agressor, deve haver uma rede de acolhimento humanitário, com amparo psicológico, socioeconômico e socioassistencial às vítimas. </p>
-          <p>Durante o isolamento social, os casos de violência aumentaram de forma exorbitante e também aumentou a dificuldade em pedir ajuda e denunciar esse tipo de agressão. </p>
-          <br>
-          <p>O projeto 100 Desculpas foi idealizado pensando em facilitar Simplificar e facilitar o acesso e o conhecimento dos principais programas de apoio e acolhimento às vítimas de violência doméstica, bem como os principais mecanismos de combate e medidas protetivas destinadas à sua proteção; </p>
-          <p>Ofertar um canal de denúncias e de solicitação de ajuda de forma simplificada e segura, inclusive de forma anônima, que acionem serviços de atenção e proteção adequados para a situação exposta; </p>
-          <br>
-          <p>Divulgar toda a rede de acolhimento e apoio existente com amparo psicológico, socioeconômico e socioassistencial às vítimas, inclusive mantendo contato direto com as atendidas através de aplicativos, com constante monitoramento para qualquer assistência que se mostre necessária; </p>
-          <p>O portal e o aplicativo 100 Desculpas estão em consonância com os Objetivos Sustentáveis da ONU pela Agenda 2030,  Fomentar o empoderamento da mulher quanto à redução das desigualdades em decorrência de gênero em cumprimento ao direcionamento apresentado pelo ODS nº 5 e surgiu a partir da pesquisa: Violência Doméstica e Quarentena: A subnotificação nos tempos de Pandemia, realizada no âmbito do Programa de Mestrado em Desenvolvimento Local, do Centro Universitário Augusto Motta, UNISUAM, orientado pela Professora Doutora Maria Geralda de Miranda, na linha de pesquisa Estado, Sociedade e Desenvolvimento.  </p>
-
-        </div>
-      </div>
-
-    </section>
-    <!-- section1 - Estatisticas -->
-    <section id="estatisticas" class="py-bottom">
-      <div>
-        <h1 class="title"> Estatísticas</h1>
+      <section id="sobre" class="py-bottom">
+        <h1 class="title"> Sobre</h1>
         <div class="container">
-          <div class="estatistica">
-            <div class="estatistica1">
-              <img src="img/genero.jpg" alt="">
-            </div>
-            <div class="estatistica2">
-              <h2>Alcançar a igualdade de gênero e empoderar todas as mulheres e meninas</h2>
-              <p>A igualdade de gênero não é apenas um direito humano fundamental, mas a base necessária para a construção
-                de um mundo pacífico, próspero e sustentável. O esforço de alcance do ODS 5 é transversal à toda Agenda 2030
-                e reflete a crescente evidência de que a igualdade de gênero tem efeitos multiplicadores no desenvolvimento
-                sustentável.
-                Muitos avanços em termos de assegurar melhores condições de vida a mulheres e meninas são um importante
-                legado dos ODM. Os Objetivos de Desenvolvimento Sustentável visam intensificar estas realizações, não apenas
-                nas áreas de saúde, educação e trabalho, mas especialmente no combate às discriminações e violências
-                baseadas no gênero e na promoção do empoderamento de mulheres e meninas para que possam atuar enfaticamente
-                na promoção do desenvolvimento sustentável, por meio da participação na política, na economia, e em diversas
-                áreas de tomada de decisão.
-                O desenvolvimento sustentável não será alcançado se as barreiras tangíveis e intangíveis que impedem o pleno
-                desenvolvimento e exercício das capacidades de metade da população não forem eliminadas.</p>
-                <div class="btn-denuncie"><a href="https://unric.org/pt/objetivo-5-igualdade-de-genero-2/" target="_blank">Continue lendo</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  <!-- legislação -->
-    <section id="legislacao" class="py-bottom">
-      <h1 class="title"> Legilação</h1>
-      <div class="container">
-        <div class="legislacao">
-          <div class="legislacao-logo">
-            <img src="img/jutice.png" alt="Justiça">
-          </div>
-          <div class="legislacao-texto">
-            <div>
-              <h3>LEI 11.340 MARIA DA PENHA</h3>
-            </div>
-            <div>
-              <p>Cria mecanismos para coibir a violência doméstica e familiar contra a mulher, nos termos do § 8º do art. 226 da Constituição Federal, da Convenção sobre a Eliminação de Todas as Formas de Discriminação contra as Mulheres e da Convenção Interamericana para Prevenir, Punir e Erradicar a Violência contra a Mulher; dispõe sobre a criação dos Juizados de Violência Doméstica e Familiar contra a Mulher; altera o Código de Processo Penal, o Código Penal e a Lei de Execução Penal; e dá outras providências.</p>
-            <p>Além de proteger mulheres em situação de violência e salvar vidas, a Lei n. 11.340/2006 pune os agressores, fortalece a autonomia das mulheres, educa a sociedade e cria meios de assistência e atendimento humanizado, bem como inclui valores de direitos humanos nas políticas públicas para o enfrentamento e combate à violência de gênero.</p>
-            <div class="btn-denuncie"><a href="http://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11340.htm" target="_blank">Continue lendo</a></div>
-            </div>
-          </div>
-        </div>
-        <div class="legislacao-projeto">
-          <p>Esse é um dos mecanismos criados pela lei para coibir e prevenir a violência doméstica e familiar, assegurando que toda mulher, independentemente de classe, raça, etnia, orientação sexual, renda, cultura, nível educacional, idade e religião, goze dos direitos fundamentais inerentes à pessoa humana e tenha oportunidades e facilidades para viver sem violência, com a preservação de sua saúde física e mental e seu aperfeiçoamento moral, intelectual e social.</p>
-          <p>Pela lei, a violência doméstica e familiar contra a mulher é configurada como qualquer ação ou omissão baseada no gênero que lhe cause morte, lesão, sofrimento físico, sexual ou psicológico e dano moral ou patrimonial. Diante de um quadro como esse, as medidas protetivas podem ser concedidas de imediato, independentemente de audiência das partes e da manifestação do Ministério Público, ainda que o MP deva ser prontamente comunicado. </p>
-        </div>
-
-        <div id="orientacoes" class="orientacoes">
-          <div class="orientacao">
-            <h2>O que é violência doméstica e familiar ?</h2>
-            <p>De acordo com a Lei Maria da Penha (Lei nº 11.340/2006),  é considerada violência doméstica e familiar:</p>
-            <span>“Qualquer ação ou omissão baseada no gênero que lhe cause morte, lesão, sofrimento físico, sexual ou psicológico e dano moral ou patrimonial”.</span>
-            <p>Ou seja qualquer tipo de agressão, seja ela física, psicológica, moral, patrimonial, sexual, assédio, importunação.</p>
-            <div class="agrecao">
-              <div class="violence">
-                <h2>Quem sofre e quem comete violência doméstica ?</h2>
-                <p>A Lei Maria da Penha foi criada para a proteção de qualquer MULHER vítima de violência doméstica e familiar. </p>
-                <p>Caso um homem sofra esse tipo de violência não poderá se beneficiar das medidas, todavia, será aplicado o Código Penal.</p>
-                <span>Quanto ao agressor, ao contrário do que se pensa, ele não será apenas o marido ou companheiro, mas qualquer um que se aproveite do ambiente (doméstico e familiar) e que a violência esteja baseada no gênero da vítima (mulher). Pode ser pai, namorado, irmão, etc.</span>
+          <div id="sobre-desktop" class="sobre">
+            <div class="sobre-texto">
+              <div>
+                <h1>100 Desculpas para denunciar</h1>
+                <h3>Chega de DESCULPAS! Você não está mais sozinha!</h3>
               </div>
-              <div class="agressor">
-                <h2>A agressão pode ocorrer:</h2>
-                <ul>
-                  <li>I – No âmbito da unidade doméstica, compreendida como o espaço de convívio permanente de pessoas, com ou sem vínculo familiar, inclusive as esporadicamente agregadas;</li>
-                  <li>II – No âmbito da família, compreendida como a comunidade formada por indivíduos que são ou se consideram aparentados, unidos por laços naturais, por afinidade ou por vontade expressa;</li>
-                  <li>III – Em qualquer relação íntima de afeto, na qual o agressor conviva ou tenha convivido com a ofendida, independentemente de coabitação.</li>
-                </ul>
+              <div>
+                <p>Assim como não existem desculpas para a violência contra a mulher, não há mais desculpas para não pedir ajuda, denunciar qualquer tipo de agressão ou abuso que você esteja sofrendo. </p>
+              <p>Desculpas como dificuldades de deslocamento, medo, falta tempo, vergonha agora não tem vez. </p>
+              <p>O portal 100 desculpas disponibiliza na palma da sua mão as ferramentas necessárias para denunciar, pedir ajuda e enfrentar qualquer tipo de agressão que você venha sofrendo.</p>
+              <p><strong>Deixe o 100 Desculpas te ajudar!</strong></p>
+              </div>
+            </div>
+            <div class="sobre-logo">
+              <img src="img/logos/logo-b.png" alt="Logo Branca">
+            </div>
+          </div>
+          <div class="sobre-projeto">
+            <p>A violência doméstica, apesar de toda a companha e luta a respeito, ainda faz parte do cotidiano de grande parte das famílias brasileiras, e tem suas origens no lar, aproveitando-se das relações de afeto, independente de idade, raça/etnia e classe social. </p>
+            <p>Diante de tal quadro, o enfretamento à violência contra a mulher não pode se restringir às condições clínicas ou apenas na criminalização do agressor, deve haver uma rede de acolhimento humanitário, com amparo psicológico, socioeconômico e socioassistencial às vítimas. </p>
+            <p>Durante o isolamento social, os casos de violência aumentaram de forma exorbitante e também aumentou a dificuldade em pedir ajuda e denunciar esse tipo de agressão. </p>
+            <br>
+            <p>O projeto 100 Desculpas foi idealizado pensando em facilitar Simplificar e facilitar o acesso e o conhecimento dos principais programas de apoio e acolhimento às vítimas de violência doméstica, bem como os principais mecanismos de combate e medidas protetivas destinadas à sua proteção; </p>
+            <p>Ofertar um canal de denúncias e de solicitação de ajuda de forma simplificada e segura, inclusive de forma anônima, que acionem serviços de atenção e proteção adequados para a situação exposta; </p>
+            <br>
+            <p>Divulgar toda a rede de acolhimento e apoio existente com amparo psicológico, socioeconômico e socioassistencial às vítimas, inclusive mantendo contato direto com as atendidas através de aplicativos, com constante monitoramento para qualquer assistência que se mostre necessária; </p>
+            <p>O portal e o aplicativo 100 Desculpas estão em consonância com os Objetivos Sustentáveis da ONU pela Agenda 2030,  Fomentar o empoderamento da mulher quanto à redução das desigualdades em decorrência de gênero em cumprimento ao direcionamento apresentado pelo ODS nº 5 e surgiu a partir da pesquisa: Violência Doméstica e Quarentena: A subnotificação nos tempos de Pandemia, realizada no âmbito do Programa de Mestrado em Desenvolvimento Local, do Centro Universitário Augusto Motta, UNISUAM, orientado pela Professora Doutora Maria Geralda de Miranda, na linha de pesquisa Estado, Sociedade e Desenvolvimento.  </p>
+
+          </div>
+        </div>
+
+      </section>
+
+      <!-- section1 - Estatisticas -->
+      <section id="estatisticas" class="py-bottom">
+        <div>
+          <h1 class="title"> Estatísticas</h1>
+          <div class="container">
+            <div class="estatistica">
+              <div class="estatistica1">
+                <img src="img/genero.jpg" alt="">
+              </div>
+              <div class="estatistica2">
+                <h2>Alcançar a igualdade de gênero e empoderar todas as mulheres e meninas</h2>
+                <p>A igualdade de gênero não é apenas um direito humano fundamental, mas a base necessária para a construção
+                  de um mundo pacífico, próspero e sustentável. O esforço de alcance do ODS 5 é transversal à toda Agenda 2030
+                  e reflete a crescente evidência de que a igualdade de gênero tem efeitos multiplicadores no desenvolvimento
+                  sustentável.
+                  Muitos avanços em termos de assegurar melhores condições de vida a mulheres e meninas são um importante
+                  legado dos ODM. Os Objetivos de Desenvolvimento Sustentável visam intensificar estas realizações, não apenas
+                  nas áreas de saúde, educação e trabalho, mas especialmente no combate às discriminações e violências
+                  baseadas no gênero e na promoção do empoderamento de mulheres e meninas para que possam atuar enfaticamente
+                  na promoção do desenvolvimento sustentável, por meio da participação na política, na economia, e em diversas
+                  áreas de tomada de decisão.
+                  O desenvolvimento sustentável não será alcançado se as barreiras tangíveis e intangíveis que impedem o pleno
+                  desenvolvimento e exercício das capacidades de metade da população não forem eliminadas.</p>
+                  <div class="btn-denuncie"><a href="https://unric.org/pt/objetivo-5-igualdade-de-genero-2/" target="_blank">Continue lendo</a></div>
               </div>
             </div>
           </div>
-          <div class="teste">
-            <div class="card">
-              <div class="card-body">
-                <h1>NÃO SABE IDENTIFICAR SE VOCÊ É VÍTIMA DE VIOLÊNCIA DOMÉSTICA?</h1>
-                <img src="img/teste.svg" alt="Imagem pro teste">
-                <div class="btn-denuncie"><a href="https://www.bol.uol.com.br/entretenimento/2018/12/11/ciclo-da-violencia-faca-teste-e-saiba-se-voce-sofre-violencia-domestica.htm" target="_blank">Acesse para fazer o teste</a> </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- medidas protetivas -->
-    <section id="medidas" class="medidas">
-      <div class="container">
-        <div class="medidas-texto">
-          <h1>Algumas medidas protetivas</h1>
-          <section class="dl-blurbs">
-            <dl>
-              <dt>Afastamento dos agressores do lar da ofendida. </dt>
-              <dt>Proibição do agressor de aproximar-se da vítima, seus familiares e eventuais testemunhas, fixando-se o limite de distância entre eles. </dt>
-              <dt>Proibição do agressor de contato com a ofendida, seus familiares e eventuais testemunhas, por qualquer meio de comunicação. </dt>
-              <dt>Restituição de bens indevidamente subtraídos pelo agressor a ofendida. </dt>
-              <dt>Comparecimento do agressor a programas de recuperação e reeducação. </dt>
-            </dl>
-            <dl>
-              <dt>Proibição dos agressores de frequentar lugares, a fim de preservar a integridade física e psicológica da vítima, dentre os quais o seu local de trabalho.</dt>
-              <dt>Afastamento do agressor do lar, domicilio ou local de convivência com a ofendida.</dt>
-              <dt>Restrição ou suspensão das visitas do agressor. </dt>
-              <dt>Proibição temporária para celebração de atos e contratos de compra e venda e locação de propriedade em comum, salvo expressa autorização judicial.</dt>
-              <dt>Acompanhamento psicossocial do agressor, por meio de atendimento individual e/ou em grupo de apoio.</dt>
-            </dl>
-            <dl>
-              <dt>Determinação de prestação de alimentos provisionais ou provisórios. </dt>
-              <dt>Solicita a concessão da guarda provisória dos filhos.</dt>
-              <dt>Suspensão da posse ou restrição do porte de armas, com comunicação ao órgão competente, nos termos da Lei 10.826 de 22.12.03.</dt>
-              <dt>Suspensão das procurações conferidas pela ofendida ao agressor.</dt>
-            </dl>
-            <dl>
-              <dt>Encaminhamento da ofendida e seus dependentes a programa oficial ou comunitário de proteção ou atendimento.</dt>
-              <dt>Recondução da ofendida ao respectivo domicilio, após o afastamento do agressor.</dt>
-              <dt>Determinar a separação de corpos.</dt>
-              <dt>Prestação de caução provisória, mediante deposito judicial, por perdas e danos materiais decorrentes da prática de violência domestica familiar contra a ofendida.</dt>
-            </dl>
-            </section>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- Denuncie -->
-    <section class="denuncie py-bottom" id="denuncie">
-      <h1 class="title">Denuncie</h1>
-      <div class="container">
-        <h2>Algumas formas de você conseguir denunciar</h2>
-        <div class="denuncie-card">
-          <div class="card-1 "><img src="img/icons/laptop.png" alt="Delegacia Virtual">
-          <p>Delegacia Virtual <br><a href="https://www.pc.sc.gov.br/" target="_blank">www.pc.sc.gov.br</a></p>
-        </div>
-          <div class="card-1"><img src="img/icons/police-station.png" alt="Delegacia mais próxima">
-          <p><span>Delegacia</span> mais próxima</p> 
-        </div>
-          <div class="card-1"><img src="img/icons/mall.png" alt="CRAS próximo"> 
-          <p><span>CRAS</span> mais próximo</p>
-        </div>
-          <div class="card-1"><img src="img/icons/telephone.png" alt=""> 
-          <p>Disque <span>100</span> ou disque <span>181</span></p></div>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- Colaboradores -->
-    <section id="colaborador" class="colaborador py-bottom">
-      <h1 class="title"> Colaboradores</h1>
-      <div class="container">
-        <div class="colaboradores">
-          
-          <div class="col1">
-            <div class="col1-img">
-             <img src="img/perfil.png" alt="Perfil">
-            </div>
-             <div class="col1-texto">
-               <p>Autor: <strong>HENRI FRANCIS DE OLIVERIA RUIZ</strong> </p>
-             <p>Mestrando em Desenvolvimento Local  - Centro Universitário Augusto Motta, UNISUAM, Rio de Janeiro, RJ </p>
-             </div>
-           </div>
-           <div class="col1">
-            <div class="col1-img">
-             <img src="img/perfil.png" alt="Perfil">
-            </div>
-             <div class="col1-texto">
-               <p>Co-autorea: <strong>MARIA GERALDA DE MIRANDA</strong> </p>
-             <p>Pós doutora em Políticas Públicas e Formação Humana pela Universidade do Estado do Rio de Janeiro (UERJ). Pesquisadora do Programa de Pós-graduação em Desenvolvimento Local do Centro Universitário Augusto Motta, UNISUAM, Rio de Janeiro, RJ </p>
-             </div>
-           </div>
-           <div class="col1">
-            <div class="col1-img">
-             <img src="img/perfil.png" alt="Perfil">
-            </div>
-             <div class="col1-texto">
-              <p>Desenvolvedor do site: <strong>ANDERSON</strong> </p>
-              <p>Técnico em Tecnologia da Informação – Instituto Paula Souza, Tupã/SP </p>
-             </div>
-           </div>
-        </div>
-
-      </div>
-
-    </section>
-
-    <!-- Contato -->
-    <section id="contato" class="contato">
-      <h1 class="title" style="color: white;"> Fale conosco</h1>
-      <div class="container">
-        <div class="fale-conosco">
-          <div class="card">
-            <div class="card-body">
-              <h1>Faça sua denúncia</h1>
-              <p>Faça  sua denúncia de forma simples, preencha os campos que entraremos em contato.</p>
-              <div class="form">
-                <form action="">
-                  <input type="text" name="fnome" id="fnome" placeholder="Nome completo">
-                  <input type="email" name="femail" id="femail" placeholder="E-mail">
-                  <textarea name="ftextarea" id="ftextarea" cols="30" rows="10" placeholder="Escreva com quiser..."></textarea>
-                  <button type="submit" class="btn-denuncie">Enviar</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- Footer -->
-    <footer id="footer">
-      <section class="footer">
-        <div class="container">
-          <div class="footer-template">
-            <div class="footer-colum">
-              <ul>
-                <li>Serviços Úteis</li>
-                <li><a href="https://www.justica.sp.gov.br/" target="_blank">Secretaria da Justiça e Cidadania</a></li>
-                <li><a href="https://www.sosmulher.sp.gov.br/#contato" target="_blank">Fale Conosco (SOS MULHER)</a></li>
-                <li><a href="https://www.bancodopovo.sp.gov.br/" target="_blank">Banco do Povo Paulista</a></li>
-                <li><a href="https://www.sosmulher.sp.gov.br/apoio/apoioMulher.html" target="_blank">Serviço Público à Mulher</a></li>
-                <li><a href="https://play.google.com/store/apps/details?id=pmesp.appemer.mp.android.medidasprotetivas" target="_blank">Baixe o App SOS MULHER</a></li>
-              </ul>
-            </div>
-            <div class="footer-colum">
-              <ul>
-                <li>Telefones Úteis</li>
-                <li><strong>190</strong> - Polícia Militar</li>
-                <li><strong>193</strong> - Bombeiros</li>
-                <li><strong>181</strong> - Disque Denúncia</li>
-                <li><strong>180</strong> - Centra de Atendimento à Mulher</li>
-              </ul>
-            </div>
-            <div class="footer-colum">
-              <ul>
-                <li>Delegacia de Tupã-SP</li>
-                <li>R. Tupinambaranas, 1125 - Centro, Tupã - SP, 17605-244 - Tupã-SP</li>
-                <li>Telefone: (14) 3496-2100</li>
-              </ul>
-            </div>
-            <div class="footer-colum">
-              <ul>
-                <li>CRAS de Tupã-SP</li>
-                <li>R. Machado de Assis, 240 - Parque Pres. Kenedy, Tupã - SP, 17602-590</li>
-                <li>Telefone: (14) 3496-2969</li>
-              </ul>
-            </div>
-            
-          </div>
-          <p style="text-align: center;"><a href="">Tech For Web - 2022 &copy;</a></p>
         </div>
       </section>
 
-    </footer>
-  </div>
-  
+    <!-- legislação -->
+      <section id="legislacao" class="py-bottom">
+        <h1 class="title"> Legilação</h1>
+        <div class="container">
+          <div class="legislacao">
+            <div class="legislacao-logo">
+              <img src="img/jutice.png" alt="Justiça">
+            </div>
+            <div class="legislacao-texto">
+              <div>
+                <h3>LEI 11.340 MARIA DA PENHA</h3>
+              </div>
+              <div>
+                <p>Cria mecanismos para coibir a violência doméstica e familiar contra a mulher, nos termos do § 8º do art. 226 da Constituição Federal, da Convenção sobre a Eliminação de Todas as Formas de Discriminação contra as Mulheres e da Convenção Interamericana para Prevenir, Punir e Erradicar a Violência contra a Mulher; dispõe sobre a criação dos Juizados de Violência Doméstica e Familiar contra a Mulher; altera o Código de Processo Penal, o Código Penal e a Lei de Execução Penal; e dá outras providências.</p>
+              <p>Além de proteger mulheres em situação de violência e salvar vidas, a Lei n. 11.340/2006 pune os agressores, fortalece a autonomia das mulheres, educa a sociedade e cria meios de assistência e atendimento humanizado, bem como inclui valores de direitos humanos nas políticas públicas para o enfrentamento e combate à violência de gênero.</p>
+              <div class="btn-denuncie"><a href="http://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11340.htm" target="_blank">Continue lendo</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="legislacao-projeto">
+            <p>Esse é um dos mecanismos criados pela lei para coibir e prevenir a violência doméstica e familiar, assegurando que toda mulher, independentemente de classe, raça, etnia, orientação sexual, renda, cultura, nível educacional, idade e religião, goze dos direitos fundamentais inerentes à pessoa humana e tenha oportunidades e facilidades para viver sem violência, com a preservação de sua saúde física e mental e seu aperfeiçoamento moral, intelectual e social.</p>
+            <p>Pela lei, a violência doméstica e familiar contra a mulher é configurada como qualquer ação ou omissão baseada no gênero que lhe cause morte, lesão, sofrimento físico, sexual ou psicológico e dano moral ou patrimonial. Diante de um quadro como esse, as medidas protetivas podem ser concedidas de imediato, independentemente de audiência das partes e da manifestação do Ministério Público, ainda que o MP deva ser prontamente comunicado. </p>
+          </div>
+
+          <div id="orientacoes" class="orientacoes">
+            <div class="orientacao">
+              <h2>O que é violência doméstica e familiar ?</h2>
+              <p>De acordo com a Lei Maria da Penha (Lei nº 11.340/2006),  é considerada violência doméstica e familiar:</p>
+              <span>“Qualquer ação ou omissão baseada no gênero que lhe cause morte, lesão, sofrimento físico, sexual ou psicológico e dano moral ou patrimonial”.</span>
+              <p>Ou seja qualquer tipo de agressão, seja ela física, psicológica, moral, patrimonial, sexual, assédio, importunação.</p>
+              <div class="agrecao">
+                <div class="violence">
+                  <h2>Quem sofre e quem comete violência doméstica ?</h2>
+                  <p>A Lei Maria da Penha foi criada para a proteção de qualquer MULHER vítima de violência doméstica e familiar. </p>
+                  <p>Caso um homem sofra esse tipo de violência não poderá se beneficiar das medidas, todavia, será aplicado o Código Penal.</p>
+                  <span>Quanto ao agressor, ao contrário do que se pensa, ele não será apenas o marido ou companheiro, mas qualquer um que se aproveite do ambiente (doméstico e familiar) e que a violência esteja baseada no gênero da vítima (mulher). Pode ser pai, namorado, irmão, etc.</span>
+                </div>
+                <div class="agressor">
+                  <h2>A agressão pode ocorrer:</h2>
+                  <ul>
+                    <li>I – No âmbito da unidade doméstica, compreendida como o espaço de convívio permanente de pessoas, com ou sem vínculo familiar, inclusive as esporadicamente agregadas;</li>
+                    <li>II – No âmbito da família, compreendida como a comunidade formada por indivíduos que são ou se consideram aparentados, unidos por laços naturais, por afinidade ou por vontade expressa;</li>
+                    <li>III – Em qualquer relação íntima de afeto, na qual o agressor conviva ou tenha convivido com a ofendida, independentemente de coabitação.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="teste">
+              <div class="card">
+                <div class="card-body">
+                  <h1>NÃO SABE IDENTIFICAR SE VOCÊ É VÍTIMA DE VIOLÊNCIA DOMÉSTICA?</h1>
+                  <img src="img/teste.svg" alt="Imagem pro teste">
+                  <div class="btn-denuncie"><a href="https://www.bol.uol.com.br/entretenimento/2018/12/11/ciclo-da-violencia-faca-teste-e-saiba-se-voce-sofre-violencia-domestica.htm" target="_blank">Acesse para fazer o teste</a> </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- medidas protetivas -->
+      <section id="medidas" class="medidas">
+        <div class="container">
+          <div class="medidas-texto">
+            <h1>Algumas medidas protetivas</h1>
+            <section class="dl-blurbs">
+              <dl>
+                <dt>Afastamento dos agressores do lar da ofendida. </dt>
+                <dt>Proibição do agressor de aproximar-se da vítima, seus familiares e eventuais testemunhas, fixando-se o limite de distância entre eles. </dt>
+                <dt>Proibição do agressor de contato com a ofendida, seus familiares e eventuais testemunhas, por qualquer meio de comunicação. </dt>
+                <dt>Restituição de bens indevidamente subtraídos pelo agressor a ofendida. </dt>
+                <dt>Comparecimento do agressor a programas de recuperação e reeducação. </dt>
+              </dl>
+              <dl>
+                <dt>Proibição dos agressores de frequentar lugares, a fim de preservar a integridade física e psicológica da vítima, dentre os quais o seu local de trabalho.</dt>
+                <dt>Afastamento do agressor do lar, domicilio ou local de convivência com a ofendida.</dt>
+                <dt>Restrição ou suspensão das visitas do agressor. </dt>
+                <dt>Proibição temporária para celebração de atos e contratos de compra e venda e locação de propriedade em comum, salvo expressa autorização judicial.</dt>
+                <dt>Acompanhamento psicossocial do agressor, por meio de atendimento individual e/ou em grupo de apoio.</dt>
+              </dl>
+              <dl>
+                <dt>Determinação de prestação de alimentos provisionais ou provisórios. </dt>
+                <dt>Solicita a concessão da guarda provisória dos filhos.</dt>
+                <dt>Suspensão da posse ou restrição do porte de armas, com comunicação ao órgão competente, nos termos da Lei 10.826 de 22.12.03.</dt>
+                <dt>Suspensão das procurações conferidas pela ofendida ao agressor.</dt>
+              </dl>
+              <dl>
+                <dt>Encaminhamento da ofendida e seus dependentes a programa oficial ou comunitário de proteção ou atendimento.</dt>
+                <dt>Recondução da ofendida ao respectivo domicilio, após o afastamento do agressor.</dt>
+                <dt>Determinar a separação de corpos.</dt>
+                <dt>Prestação de caução provisória, mediante deposito judicial, por perdas e danos materiais decorrentes da prática de violência domestica familiar contra a ofendida.</dt>
+              </dl>
+              </section>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Denuncie -->
+      <section class="denuncie py-bottom" id="denuncie">
+        <h1 class="title">Denuncie</h1>
+        <div class="container">
+          <h2>Algumas formas de você conseguir denunciar</h2>
+          <div class="denuncie-card">
+            <div class="card-1 "><img src="img/icons/laptop.png" alt="Delegacia Virtual">
+            <p>Delegacia Virtual <br><a href="https://www.pc.sc.gov.br/" target="_blank">www.pc.sc.gov.br</a></p>
+          </div>
+            <div class="card-1"><img src="img/icons/police-station.png" alt="Delegacia mais próxima">
+            <p><span>Delegacia</span> mais próxima</p> 
+          </div>
+            <div class="card-1"><img src="img/icons/mall.png" alt="CRAS próximo"> 
+            <p><span>CRAS</span> mais próximo</p>
+          </div>
+            <div class="card-1"><img src="img/icons/telephone.png" alt=""> 
+            <p>Disque <span>100</span> ou disque <span>181</span></p></div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Colaboradores -->
+      <section id="colaborador" class="colaborador py-bottom">
+        <h1 class="title"> Colaboradores</h1>
+        <div class="container">
+          <div class="colaboradores">
+            
+            <div class="col1">
+              <div class="col1-img">
+              <img src="img/perfil.png" alt="Perfil">
+              </div>
+              <div class="col1-texto">
+                <p>Autor: <strong>HENRI FRANCIS DE OLIVERIA RUIZ</strong> </p>
+              <p>Mestrando em Desenvolvimento Local  - Centro Universitário Augusto Motta, UNISUAM, Rio de Janeiro, RJ </p>
+              </div>
+            </div>
+            <div class="col1">
+              <div class="col1-img">
+              <img src="img/perfil.png" alt="Perfil">
+              </div>
+              <div class="col1-texto">
+                <p>Co-autorea: <strong>MARIA GERALDA DE MIRANDA</strong> </p>
+              <p>Pós doutora em Políticas Públicas e Formação Humana pela Universidade do Estado do Rio de Janeiro (UERJ). Pesquisadora do Programa de Pós-graduação em Desenvolvimento Local do Centro Universitário Augusto Motta, UNISUAM, Rio de Janeiro, RJ </p>
+              </div>
+            </div>
+            <div class="col1">
+              <div class="col1-img">
+              <img src="img/perfil.png" alt="Perfil">
+              </div>
+              <div class="col1-texto">
+                <p>Desenvolvedor do site: <strong>ANDERSON</strong> </p>
+                <p>Técnico em Tecnologia da Informação – Instituto Paula Souza, Tupã/SP </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- Contato -->
+      <section id="contato" class="contato">
+        <h1 class="title" style="color: white;"> Fale conosco</h1>
+        <div class="container">
+          <div class="fale-conosco">
+            <div class="card">
+              <div class="card-body">
+                <h1>Faça sua denúncia</h1>
+                <p>Faça  sua denúncia de forma simples, preencha os campos que entraremos em contato.</p>
+                <div class="form">
+                  <form action="">
+                    <input type="text" name="fnome" id="fnome" placeholder="Nome completo">
+                    <input type="email" name="femail" id="femail" placeholder="E-mail">
+                    <textarea name="ftextarea" id="ftextarea" cols="30" rows="10" placeholder="Escreva com quiser..."></textarea>
+                    <button type="submit" class="btn-denuncie">Enviar</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Footer -->
+      <footer id="footer">
+        <section class="footer">
+          <div class="container">
+            <div class="footer-template">
+              <div class="footer-colum">
+                <ul>
+                  <li>Serviços Úteis</li>
+                  <li><a href="https://www.justica.sp.gov.br/" target="_blank">Secretaria da Justiça e Cidadania</a></li>
+                  <li><a href="https://www.sosmulher.sp.gov.br/#contato" target="_blank">Fale Conosco (SOS MULHER)</a></li>
+                  <li><a href="https://www.bancodopovo.sp.gov.br/" target="_blank">Banco do Povo Paulista</a></li>
+                  <li><a href="https://www.sosmulher.sp.gov.br/apoio/apoioMulher.html" target="_blank">Serviço Público à Mulher</a></li>
+                  <li><a href="https://play.google.com/store/apps/details?id=pmesp.appemer.mp.android.medidasprotetivas" target="_blank">Baixe o App SOS MULHER</a></li>
+                </ul>
+              </div>
+              <div class="footer-colum">
+                <ul>
+                  <li>Telefones Úteis</li>
+                  <li><strong>190</strong> - Polícia Militar</li>
+                  <li><strong>193</strong> - Bombeiros</li>
+                  <li><strong>181</strong> - Disque Denúncia</li>
+                  <li><strong>180</strong> - Centra de Atendimento à Mulher</li>
+                </ul>
+              </div>
+              <div class="footer-colum">
+                <ul>
+                  <li>Delegacia de Tupã-SP</li>
+                  <li>R. Tupinambaranas, 1125 - Centro, Tupã - SP, 17605-244 - Tupã-SP</li>
+                  <li>Telefone: (14) 3496-2100</li>
+                </ul>
+              </div>
+              <div class="footer-colum">
+                <ul>
+                  <li>CRAS de Tupã-SP</li>
+                  <li>R. Machado de Assis, 240 - Parque Pres. Kenedy, Tupã - SP, 17602-590</li>
+                  <li>Telefone: (14) 3496-2969</li>
+                </ul>
+              </div>
+              
+            </div>
+            <p style="text-align: center;"><a href="">Tech For Web - 2022 &copy;</a></p>
+          </div>
+        </section>
+
+      </footer>
+    </div>
+
   <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

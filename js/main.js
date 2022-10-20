@@ -44,3 +44,35 @@ window.addEventListener('scroll', function(){
   MudarLogo.classList.toggle('logo-r', window.scrollY > 0);
 })
 
+/* modal 1 */
+function iniciModal(modalID) {
+  const modal = document.getElementById(modalID);
+  if(modal) {
+    modal.classList.add('mostrar');
+    modal.addEventListener('click', (e) => {
+      if(e.target.id == modalID || e.target.className == 'fechar') {
+        modal.classList.remove('mostrar')
+      }
+    });
+  }
+};
+
+function iniciModal2(modalID2) {
+  const modal = document.getElementById(modalID2);
+  if(modal) {
+    modal.classList.add('mostrar');
+    modal.addEventListener('click', (e) => {
+      if(e.target.id == modalID2 || e.target.className == 'fechar') {
+        modal.classList.remove('mostrar')
+      }
+    });
+  }
+}
+
+const abriModal = document.querySelector('.abrirModal');
+const abriModal2 = document.querySelector('.abrirModal2');
+abriModal.addEventListener('click', () => iniciModal('modal-ajuda'));
+abriModal2.addEventListener('click', () => iniciModal('modal-ajuda-2'));
+
+
+

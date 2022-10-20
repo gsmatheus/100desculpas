@@ -152,7 +152,7 @@ h6 {
   font-size: .8rem;
   text-align: center;
   background: var(--color-red);
-  color: var(--color-background);
+  color: var(--color-background) !important;
   border-radius: 5px;
   font-size: .8rem;
   cursor: pointer;
@@ -160,7 +160,7 @@ h6 {
   }
   .btn-denuncie:hover{
     background: #7c1c22;
-    color: #fff;
+    color: #fff !important;
   }
   nav li:last-child{
     margin: 10px 0;

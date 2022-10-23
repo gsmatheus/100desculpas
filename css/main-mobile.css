@@ -226,7 +226,7 @@
   }
 
 
-
+/* Button mobile, para sidebar */
   #btn-mobile {
     display: flex;
     padding: 0.5rem 1rem;
@@ -265,7 +265,7 @@
     top: -8px;
   }
 
-
+/* texto header */
   .row .right{
     position: absolute;
     width: 90%;
@@ -326,7 +326,7 @@
   }
 }
 
-
+/* Box de teste */
 @media only screen and (max-width: 600px) {
   .sobre{
     display: flex;
@@ -335,13 +335,13 @@
     text-align: center;
   } 
   .sobre h1{
-    font-size: 2.5rem;
+    font-size: 1.6rem;
   }
   .sobre h3{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   }
-
+  /* Legislação */
   @media only screen and (max-width: 600px) { 
     .legislacao-logo{
       grid-column: 1 / 4;
@@ -350,7 +350,7 @@
       grid-column: 1 / 4;
     }
   }
-
+/* Orientações */
   @media only screen and (max-width: 600px) { 
     .orientacoes {
      width: 100%;
@@ -414,7 +414,7 @@
       padding-bottom: 3vw;
    }
  }
-
+/* Denuncie */
  @media only screen and (max-width: 600px) {  
   .denuncie h2{
     font-size: 1.6rem;
@@ -435,7 +435,7 @@
     flex-direction: column;
   }
   }
-
+/* Colaboradores */
     
  @media only screen and (max-width: 850px) {  
   .colaboradores{

@@ -172,7 +172,7 @@ h6 {
     transition: all .4s ease;
   }
   nav li a:hover{
-    color: var(--color-title);
+    color: var(--color-red);
   }
 
   .header-menu {

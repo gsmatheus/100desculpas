@@ -1,6 +1,10 @@
  /* ============================= responsivo mobile principal ============================== */
  @media (max-width: 800px) {
 
+  .col1{
+    grid-template-columns: 280px 1fr;
+  }
+
   /*======= modal ======*/
   .modal-container{
     width: 100vw;

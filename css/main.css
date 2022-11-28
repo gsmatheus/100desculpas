@@ -454,7 +454,16 @@ h6 {
   .btn-verde:hover{
     background: #1a5133;
   }
-
+/* link pagina inicial desktop */
+#model-desktop .link{
+  margin-top: 10px;
+  font-size: 1rem;
+  font-family: Rubik, sans-serif ;
+  
+}
+.link a{
+  padding: 10px 40px;
+}
 /* tirar tela do app */
   #model-app{
     display: none;
@@ -544,7 +553,7 @@ h6 {
 
   /* Sobre */
   #sobre{
-    background: #222F33;
+    background: #CB2B35;
     height: 100%;
   }
   .sobre{
